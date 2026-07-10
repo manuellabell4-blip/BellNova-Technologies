@@ -1,0 +1,106 @@
+.footer {
+  background: #0f172a;
+  color: white;
+  padding: 60px 8% 20px;
+}
+
+
+/* Contenu principal */
+
+.footer-content {
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+
+}
+
+
+/* Logo */
+
+.footer h2 {
+
+  color: #38bdf8;
+  font-size: 30px;
+  margin-bottom: 15px;
+
+}
+
+
+/* Titres */
+
+.footer h3 {
+
+  font-size: 20px;
+  margin-bottom: 20px;
+
+}
+
+
+/* Paragraphes */
+
+.footer p {
+
+  color: #cbd5e1;
+  line-height: 1.6;
+
+}
+
+
+/* Liste */
+
+.footer ul {
+
+  list-style: none;
+  padding: 0;
+
+}
+
+
+.footer ul li {
+
+  color: #cbd5e1;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: .3s;
+
+}
+
+
+.footer ul li:hover {
+
+  color: #38bdf8;
+
+}
+
+
+/* Partie copyright */
+
+.footer-bottom {
+
+  margin-top: 50px;
+  padding-top: 20px;
+
+  border-top: 1px solid rgba(255,255,255,0.1);
+
+  text-align: center;
+
+  color: #94a3b8;
+
+  font-size: 14px;
+
+}
+
+
+/* Responsive */
+
+@media(max-width:768px){
+
+  .footer-content {
+
+    grid-template-columns: 1fr;
+    text-align: center;
+
+  }
+
+}

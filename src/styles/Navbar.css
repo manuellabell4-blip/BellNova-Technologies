@@ -1,0 +1,149 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 8%;   /* Avant : 20px 8% */
+  background-color: #0f172a;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav h2 {
+  font-size: 24px;   /* Avant : 30px */
+  font-weight: bold;
+  color: #38bdf8;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;   /* Avant : 35px */
+}
+
+nav ul li {
+  font-size: 15px;   /* Avant : 17px */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+nav ul li:hover {
+  color: #38bdf8;
+}
+
+nav ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: #38bdf8;
+  transition: 0.3s;
+}
+
+nav ul li:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 5%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+}
+
+/* =========================
+   MENU HAMBURGER
+========================= */
+
+.menu-icon {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: #38bdf8;
+}
+
+/* =========================
+   VERSION MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #0f172a;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+    gap: 20px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+}
+
+.navbar {
+  transition: 0.3s;
+}
+
+
+.navbar.scrolled {
+  background: white;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+
+  nav {
+    padding: 15px 5%;
+  }
+
+
+  nav h2 {
+    font-size: 24px;
+  }
+
+
+  nav ul {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    text-align: center;
+  }
+
+
+  nav ul li {
+    font-size: 16px;
+  }
+
+}

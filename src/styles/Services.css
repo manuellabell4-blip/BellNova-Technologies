@@ -1,0 +1,130 @@
+.services {
+  padding: 80px 8%;
+  text-align: center;
+  background: white;
+}
+
+
+/* Badge */
+
+.services-badge {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 30px;
+  background: #e0f2fe;
+  color: #0284c7;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+/* Titre */
+
+.services h2 {
+  font-size: 42px;
+  color: #0f172a;
+  margin-bottom: 20px;
+}
+
+
+/* Texte */
+
+.services-text {
+  max-width: 650px;
+  margin: auto;
+  color: #64748b;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+
+/* Conteneur des cartes */
+
+.services-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-top: 50px;
+}
+
+
+/* Carte */
+
+.service-card {
+
+  background: #f8fafc;
+
+  padding: 35px 25px;
+
+  border-radius: 20px;
+
+  transition: 0.3s;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+
+}
+
+
+/* Effet au survol */
+
+.service-card:hover {
+
+  transform: translateY(-10px);
+
+}
+
+
+/* Titre des cartes */
+
+.service-card h3 {
+
+  color: #2563eb;
+
+  font-size: 22px;
+
+  margin-bottom: 15px;
+
+}
+
+
+/* Texte des cartes */
+
+.service-card p {
+
+  color: #475569;
+
+  line-height: 1.6;
+
+}
+
+
+
+/* Version téléphone */
+
+@media(max-width:900px){
+
+  .services-cards {
+
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
+}
+
+
+@media(max-width:600px){
+
+  .services h2 {
+
+    font-size: 32px;
+
+  }
+
+
+  .services-cards {
+
+    grid-template-columns: 1fr;
+
+  }
+
+}

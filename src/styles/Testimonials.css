@@ -1,0 +1,151 @@
+.testimonials {
+  padding: 80px 8%;
+  text-align: center;
+  background: white;
+}
+
+
+/* Badge */
+
+.testimonials-badge {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 30px;
+  background: #fef3c7;
+  color: #d97706;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+/* Titre */
+
+.testimonials h2 {
+  font-size: 42px;
+  color: #0f172a;
+  margin-bottom: 20px;
+}
+
+
+/* Texte */
+
+.testimonials-text {
+  max-width: 600px;
+  margin: auto;
+  color: #64748b;
+  font-size: 18px;
+}
+
+
+
+/* Conteneur des avis */
+
+.testimonial-container {
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+
+  margin-top: 50px;
+
+}
+
+
+/* Carte */
+
+.testimonial-card {
+
+  background: #f8fafc;
+
+  padding: 30px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+
+  transition: 0.3s;
+
+}
+
+
+
+/* Effet hover */
+
+.testimonial-card:hover {
+
+  transform: translateY(-10px);
+
+}
+
+
+
+/* Étoiles */
+
+.stars {
+
+  font-size: 22px;
+
+  margin-bottom: 20px;
+
+}
+
+
+
+/* Avis */
+
+.testimonial-card p {
+
+  color: #475569;
+
+  font-style: italic;
+
+  line-height: 1.6;
+
+}
+
+
+
+/* Nom client */
+
+.testimonial-card h3 {
+
+  margin-top: 20px;
+
+  color: #2563eb;
+
+  font-size: 17px;
+
+}
+
+
+
+/* Responsive */
+
+@media(max-width:900px){
+
+  .testimonial-container {
+
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
+}
+
+
+
+@media(max-width:600px){
+
+  .testimonials h2 {
+
+    font-size: 32px;
+
+  }
+
+
+  .testimonial-container {
+
+    grid-template-columns: 1fr;
+
+  }
+
+}

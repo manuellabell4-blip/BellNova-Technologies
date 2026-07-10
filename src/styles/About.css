@@ -1,0 +1,114 @@
+.about {
+  padding: 80px 8%;
+  text-align: center;
+  background: #f8fafc;
+}
+
+
+/* Badge */
+
+.about-badge {
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 30px;
+  background: #dbeafe;
+  color: #2563eb;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+
+/* Titre */
+
+.about h2 {
+  font-size: 42px;
+  color: #0f172a;
+  margin-bottom: 20px;
+}
+
+
+/* Description */
+
+.about > p {
+  max-width: 700px;
+  margin: auto;
+  color: #475569;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+
+/* Les cartes */
+
+.about-cards {
+
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+
+}
+
+
+.about-card {
+
+  background: white;
+  padding: 30px;
+  width: 300px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+
+  transition: .3s;
+
+}
+
+
+.about-card:hover {
+
+  transform: translateY(-10px);
+
+}
+
+
+.about-card h3 {
+
+  color: #2563eb;
+  font-size: 22px;
+
+}
+
+
+.about-card p {
+
+  color: #64748b;
+  line-height: 1.6;
+
+}
+
+
+/* Téléphone */
+
+@media(max-width:768px){
+
+  .about h2 {
+    font-size: 32px;
+  }
+
+
+  .about-cards {
+
+    flex-direction: column;
+    align-items: center;
+
+  }
+
+
+  .about-card {
+
+    width: 90%;
+
+  }
+
+}
