@@ -17,10 +17,15 @@ function Contact() {
     setIsSending(true);
 
     emailjs.sendForm(
-      "service_aaml8bm",
-      "template_lllknrg",
-      form.current,
-      "s-J1Lh1s2bzmlyvFM"
+
+import .meta.env.VITE_EMAILJS_SERVICE_ID,
+
+import .meta.env.VITE_EMAILJS_TEMPLATE_ID,
+e.target,    
+      
+import .meta.env.VITE_EMAILJS_PUBLIC_KEY
+    
+
     )
     .then(() => {
       setMessageSent(true);
