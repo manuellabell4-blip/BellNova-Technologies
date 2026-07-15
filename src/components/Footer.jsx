@@ -38,15 +38,15 @@ function Footer() {
           </h3>
 
           <p>
-            🌐 LinkedIn
+             LinkedIn
           </p>
 
           <p>
-            📸 Instagram
+             Instagram
           </p>
 
           <p>
-            🎵 TikTok
+             TikTok
           </p>
 
         </div>

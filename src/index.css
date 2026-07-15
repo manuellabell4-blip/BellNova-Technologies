@@ -212,3 +212,92 @@ button:hover {
     background: var(--primary);
     color: white;
 }
+
+/* Responsive général mobile */
+@media screen and (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  section {
+    padding: 50px 20px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .whatsapp-button {
+    width: 50px;
+    height: 50px;
+
+    bottom: 20px;
+    right: 20px;
+
+    font-size: 24px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 36px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .hero img {
+    width: 90%;
+    margin-top: 30px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .services-container,
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .contact-form {
+    width: 100%;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+  }
+
+}

@@ -2,8 +2,6 @@ import { useRef, useState } from "react"
 import emailjs from "@emailjs/browser";
 import "../styles/Contact.css";
 
-import "../styles/Contact.css";
-
 function Contact() {
 
   const form = useRef();
@@ -16,17 +14,12 @@ function Contact() {
 
     setIsSending(true);
 
-    emailjs.sendForm(
-
-import .meta.env.VITE_EMAILJS_SERVICE_ID,
-
-import .meta.env.VITE_EMAILJS_TEMPLATE_ID,
-e.target,    
-      
-import .meta.env.VITE_EMAILJS_PUBLIC_KEY
-    
-
-    )
+  emailjs.sendForm(
+  import.meta.env.VITE_EMAILJS_SERVICE_ID,
+  import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+  form.current,
+  import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+)
     .then(() => {
       setMessageSent(true);
       setIsSending(false);
@@ -37,11 +30,9 @@ import .meta.env.VITE_EMAILJS_PUBLIC_KEY
       }, 4000);
     })
     .catch((error) => {
-      console.log(error);
-      setIsSending(false);
-      alert("Erreur lors de l'envoi 😞");
-    });
-
+  console.error("Erreur EmailJS :", error);
+  setIsSending(false);
+});
   };
 
   return (
@@ -62,11 +53,11 @@ import .meta.env.VITE_EMAILJS_PUBLIC_KEY
 
 {messageSent && (
   <div className="success-message">
-    ✅ Message envoyé avec succès 🚀
+    ✅ Message envoyé avec succès 
   </div>
 )}
 
-      <form 
+      <form
         ref={form} 
         className="contact-form"
         onSubmit={sendEmail}
@@ -95,7 +86,7 @@ import .meta.env.VITE_EMAILJS_PUBLIC_KEY
 
 
         <button type="submit" disabled={isSending}>
-  {isSending ? "Envoi en cours... ⏳" : "Envoyer le message 🚀"}
+  {isSending ? "Envoi en cours... ⏳" : "Envoyer le message "}
 </button>
 
       </form>

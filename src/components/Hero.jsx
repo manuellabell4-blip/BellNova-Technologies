@@ -18,18 +18,12 @@ function Hero() {
           les entreprises et entrepreneurs dans leur transformation numérique.
         </p>
 
-        <button>
-          Découvrir nos services
-        </button>
 
-<button className="secondary-btn">
-    Voir nos projets
-</button>
 
 <div className="hero-stats">
 
   <div>
-    <h3>50+</h3>
+    <h3>+10</h3>
     <p>Projets réalisés</p>
   </div>
 
